@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Datasets the project will download from kaggle
-datasets=("creditcardfraud")
-users=("mlg-ulb")
+datasets=("creditcardfraud" "30000-spotify-songs")
+users=("mlg-ulb" "joebeachcapital")
 output_folder="data"
 kaggle_api="https://www.kaggle.com/api/v1/datasets/download"
 
@@ -22,4 +22,4 @@ fi
 
 # Unzip the files and remove the .zip files
 unzip "$output_folder/*.zip" -d "$output_folder/"
-rm $output_folder/*.zip
+rm $output_folder/*.zip $output_folder/*.md
