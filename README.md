@@ -2,7 +2,7 @@
 
 To download all the datasets run:
 
-```bash
+``` bash
 data/download_script.sh 
 ```
 
